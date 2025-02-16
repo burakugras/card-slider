@@ -76,3 +76,50 @@ body {
   flex-direction: row;
   gap: 15px;
 }
+
+.social-icon li {
+  list-style: none;
+}
+
+.social-icon li a {
+  font-size: 16px;
+  text-decoration: 20px;
+  color: #fff;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00039d;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.social-icon li a::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: #ff008c;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.social-icon li a:hover::before {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background: #00039d;
+  color: #fff;
+  border-radius: 6px;
+}
