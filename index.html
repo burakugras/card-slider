@@ -9,12 +9,16 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <div class=".container-slide">
+    <div class=".container-slide-swiper">
       <div class="slider-wrapper">
-        <div class="card-box">
-          <div class="card">
+        <div class="card-box swiper-wrapper">
+          <div class="card swiper-slide">
             <div class="content-img">
               <span class="overlay">
                 <div class="card-img">
@@ -47,7 +51,12 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
